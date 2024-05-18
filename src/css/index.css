@@ -14,13 +14,14 @@ main{
     grid-row: 1/6;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 4rem;
-    /* flex-direction: column; */
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-direction: column;
+    padding-top: 1rem;
 }
 
 .panel-img{
-    max-width: 25dvw;
+    max-width: 50dvw;
     z-index: 3;
 }
 /* .panel-img{
@@ -56,4 +57,16 @@ section{
 section h2{
     font-weight: 900;
     color: var(--tertiary);
+}
+
+@media screen and (min-width: 768px) {
+    .panel-img{
+        max-width: 25dvw;
+    }
+    .splash{
+        justify-content: center;
+        flex-direction: row;
+        gap: 4rem;
+        padding-top: 0;
+    }
 }
