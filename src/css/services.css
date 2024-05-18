@@ -1,0 +1,17 @@
+main{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+
+}
+section{
+    margin-bottom: 1rem;
+}
+
+.services-image{
+    max-width: 400px;
+    border-radius: 1rem;
+}

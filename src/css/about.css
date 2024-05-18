@@ -1,0 +1,77 @@
+/*
+ * About page styles
+ */
+/*
+ * Grid container for the whole page
+ */
+main{
+    /* Use a grid to divide the page into 12 equal columns and 12 equal rows */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+/**
+ * Splash section in the top left of the page
+ */
+.splash{
+    /* Set the background image, size, position and blend mode */
+    background-image: url("../images/splash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: var(--secondary);
+    /* Position the splash section from the first column to the 12th column and from the first row to the 6th row */
+    grid-column: 1/13;
+    grid-row: 1/6;
+    /* Center the content of the splash section both horizontally and vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**
+ * H1 heading in the splash section
+ */
+main h1{
+    /* Make the heading font weight 900, size 3rem and color var(--text-dark) */
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--text-dark);
+}
+
+/**
+ * Panel section containing the content of the page
+ */
+main .panel {
+    /* Make the panel section display as a flex column, with a gap of 2rem between elements */
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* Position the panel section from the second column to the 12th column and from the 5th row to the 12th row */
+    grid-column: 2/12;
+    grid-row: 5/12;
+}
+
+/**
+ * Section containing the content of the page
+ */
+section{
+    /* Make the section display as a flex column, with a gap of 0.5rem between elements */
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/**
+ * H2 heading in the section
+ */
+section h2{
+    /* Make the heading font weight 900 and color var(--tertiary) */
+    font-weight: 900;
+    color: var(--tertiary);
+}
+
+/**
+ * This is the end of the comments
+ */
