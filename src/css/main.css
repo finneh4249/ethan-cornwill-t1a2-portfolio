@@ -96,6 +96,9 @@ body {
     border-radius: 1rem;
     transition: all 0.3s ease-in-out;
 }
+.nav-item{
+    margin-top: 1.5rem;
+}
 
 nav a:hover{
     background-color: var(--tertiary);
@@ -190,5 +193,8 @@ footer a{
         margin: 3rem 0 0 3rem;
         flex-grow: 1;
         flex-basis: 100%;
+    }
+    .nav-item{
+        margin-top: 0;
     }
 }
