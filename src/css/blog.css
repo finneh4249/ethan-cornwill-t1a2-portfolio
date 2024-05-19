@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
-    height: 75dvh;
 }
 
 .splash{
@@ -37,7 +36,7 @@ section{
     gap: .5rem;
 }
 
-.services {
+.blog {
     display:flex;
     align-items:center;
     justify-content: center;
@@ -47,18 +46,46 @@ section{
 }
 
 
-
-.services-image{
-    max-width: 100%;
-}
-
 .panel h2{
     font-weight: 900;
     color: var(--tertiary);
 }
+.blog-image{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.info-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.btn{
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary);
+    border: none;
+    border-radius: .5rem;
+    font-size: 1.25rem;
+    color: var(--text-dark);
+    transition: all 0.3s ease-in-out;
+    box-shadow:  rgba(0, 0, 0, 0.1) 0px 5px 15px;
+}
+.btn:hover{
+    background-color: var(--tertiary);
+    color: var(--text-light);
+    cursor:pointer;
+}
 
 @media screen and (min-width : 768px) {
-    .services .panel{
+    .info-container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .blog .panel{
         flex-basis: 49%;
     }
     .blog{
@@ -69,8 +96,17 @@ section{
 
 @media screen and (min-width : 1040px) {
     
-    .services .panel{
+    .blog .panel{
         flex-basis: 32%;
+    }
+
+    .info-container{
+        flex-wrap:nowrap;
+        gap: 1rem;
+    }
+
+    .blog-image{
+        flex-basis: 33%;
     }
     
 }
