@@ -69,24 +69,7 @@ section{
     resize:none;
     height: 6rem;
 }
-.btn{
-    text-align: center;
-}
-#submit{
-    padding: 1rem;
-    background-color: var(--primary);
-    border: none;
-    border-radius: .5rem;
-    font-size: 1.25rem;
-    color: var(--text-dark);
-    transition: all 0.3s ease-in-out;
-    box-shadow:  rgba(0, 0, 0, 0.1) 0px 5px 15px;
-}
-#submit:hover{
-    background-color: var(--tertiary);
-    color: var(--text-light);
-    cursor:pointer;
-}
+
 
 @media screen and (min-width: 768px) {
     form{
