@@ -19,15 +19,19 @@ This component serves as the primary navigation tool of the website. It includes
 ![Navbar tablet](./docs/components/navbar/navbar-tablet.png)
 
 #### Splash
+The splash component is the first thing visitors see when they land on a page. It’s designed to grab attention using the secondary shade of the purple colours. This is a full-width image and heading combination that highlights the main content of the page.
 ![Splash](./docs/components/splash.png)
 
 #### Button
+Buttons are essential for guiding users through the website’s interface. They are used for calls to action, such as “Hire Me”, “Contact Me”, and "Read More".
 ![Button](./docs/components/button.png)
 
 #### Panel
+Panels are used to segment and organise content in a visually appealing way. They can hold text, images, forms, or other elements and are often used to create a clean and structured layout.
 ![Panel](./docs/components/panel.png)
 
 #### Footer
+The footer is found at the bottom of every page and contains important information like contact details, social media links, site navigation, and legal information.
 ![Footer](./docs/components/footer.png)
 
 ## Screenshots
