@@ -1,10 +1,13 @@
 /*
  * About page styles
  */
+ main{
+    height: 100%;
+ }
 /*
  * Grid container for the whole page
  */
-main{
+.container{
     /* Use a grid to divide the page into 12 equal columns and 12 equal rows */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -22,12 +25,13 @@ main{
     background-blend-mode: overlay;
     background-color: var(--secondary);
     /* Position the splash section from the first column to the 12th column and from the first row to the 6th row */
-    grid-column: 1/13;
-    grid-row: 1/6;
+    grid-column: 1/-1;
+    grid-row: 1/5;
     /* Center the content of the splash section both horizontally and vertically */
     display: flex;
     align-items: center;
     justify-content: center;
+    max-height: 65dvh;
 }
 
 /**
@@ -43,14 +47,14 @@ main h1{
 /**
  * Panel section containing the content of the page
  */
-main .panel {
+.container .panel {
     /* Make the panel section display as a flex column, with a gap of 2rem between elements */
     display:flex;
     flex-direction: column;
     gap: 2rem;
     /* Position the panel section from the second column to the 12th column and from the 5th row to the 12th row */
     grid-column: 2/12;
-    grid-row: 5/12;
+    grid-row: 4/-1;
 }
 
 /**

@@ -33,7 +33,7 @@ height: 100%;
     margin-top: 2rem;
     margin-bottom: 4rem;
 }
-.panel {
+.container .panel {
     display:flex;
     flex-direction: column;
     gap: 2rem;
@@ -47,17 +47,17 @@ section{
 }
 
 .services {
-    display:flex;
-    align-items:center;
-    justify-content: center;
+    display:grid;
+    grid-template-columns: 1fr;
     gap: 1rem;
     margin: 1rem;
     flex-wrap: wrap;
     height: auto;
 }
 
-.panel{
+.services .panel{
     justify-content: flex-start;
+    gap: 1rem;
 }
 .panel img{
     border-radius: 1rem;
@@ -75,19 +75,19 @@ section{
 }
 
 @media screen and (min-width : 768px) {
-    .services .panel{
-        flex-basis: 49%;
-    }
     .blog{
         justify-content: flex-start;
+    }
+    .services{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 
 @media screen and (min-width : 1040px) {
     
-    .services .panel{
-        flex-basis: 32%;
+    .services {
+        grid-template-columns: repeat(3,1fr);
     }
     
 }
