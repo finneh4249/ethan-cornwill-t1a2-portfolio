@@ -21,7 +21,7 @@ main{
 }
 
 .panel-img{
-    max-width: 50dvw;
+    max-width: 30dvw;
     z-index: 3;
 }
 /* .panel-img{
@@ -38,6 +38,7 @@ main .panel {
     grid-column: 2/12;
     grid-row: 5/12;
     align-items: flex-start;
+    margin-top: 5rem;
 }
 
 
