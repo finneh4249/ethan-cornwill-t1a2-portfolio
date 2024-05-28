@@ -83,7 +83,7 @@ main .panel {
   justify-content: center;
 }
 
-section h2 {
+h2 {
   font-weight: 900;
   color: var(--tertiary);
   text-transform: uppercase;

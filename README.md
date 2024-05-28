@@ -10,14 +10,23 @@ I aim to display the work and coding experience of myself, effectively communica
 The site features a portfolio of my work, as well as my personal blog.
 Some features that it includes:
 
+### Custom CSS Framework
+
+This website includes a custom CSS framework that I coded from scratch which allowed me to quickly create new pages once it was created.
+
 ### Components
 
 #### Navbar
 
 This component serves as the primary navigation tool of the website. It includes links to the main sections of the site, such as Home, About, Services, Contact, and Blog. It’s designed to be responsive and user-friendly, allowing visitors to easily find what they’re looking for.
 
-![Navbar](./docs/components/navbar/navbar.png)
-![Navbar mobile](./docs/components/navbar/navbar-mobile.png)
+- Navbar on desktop
+  - ![Navbar](./docs/components/navbar/navbar.png)
+
+- Navbar on Mobile
+  - ![Navbar mobile](./docs/components/navbar/navbar-mobile.png)
+
+The navbar is controlled using a javascript function that toggles an active class in CSS that modifies the positioning of the navigation panel.
 
 #### Splash
 
@@ -31,7 +40,7 @@ Buttons are essential for guiding users through the website’s interface. They 
 
 #### Panel
 
-Panels are used to segment and organise content in a visually appealing way. They can hold text, images, forms, or other elements and are often used to create a clean and structured layout.
+Panels are used to segment and organise content in a visually appealing way. They can hold text, images, forms, or other elements and are used to create a clean and structured layout.
 ![Panel](./docs/components/panel.png)
 
 #### Footer
@@ -41,9 +50,35 @@ The footer is found at the bottom of every page and contains important informati
 
 ## Screenshots
 
-## Sitemap
+### Sitemap
 
-![Sitemap](./docs/images/sitemap.png)
+![Sitemap](./docs/images/sitemap.png)\
+
+### Wireframes
+
+#### Home Page
+
+![Homepage](./docs/images/wireframes/homepage.png)
+
+#### About Page
+
+![About Page](./docs/images/wireframes/about.png)
+
+#### Contact Page
+
+![Contact Page](./docs/images/wireframes/contact.jpeg)
+
+#### Services Page
+
+![Services Page](./docs/images/wireframes/services.jpeg)
+
+#### Blog Home
+
+![Blog Home](./docs/images/wireframes/blog-home.png)
+
+#### Blog Post
+
+![Blog Post](./docs/images/wireframes/blog-post.png)
 
 ## Target audience
 
