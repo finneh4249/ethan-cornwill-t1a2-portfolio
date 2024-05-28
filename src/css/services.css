@@ -1,3 +1,4 @@
+/* Grid container for the whole page */
 .container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -5,12 +6,14 @@
     height: auto;
 }
 
+/* Set the height of the article component to 100% */
 article{
 height: 100%;
 }
 
+/* The splash image component */
 .splash{
-    background-image: url("../images/cover-photo.jpg");
+    background-image: var(--cover-photo);
     background-size: cover;
     background-position: center;
     background-color: var(--secondary);
@@ -23,9 +26,11 @@ height: 100%;
     max-height: 50dvh;
 }
 
+/* The main heading in the splash component */
 .page-head{
     justify-content: center !important;
 }
+/* The main heading in the page */
 .container h1{
     font-weight: 900;
     font-size: 3rem;
@@ -33,6 +38,7 @@ height: 100%;
     margin-top: 2rem;
     margin-bottom: 4rem;
 }
+/* The panel component containing the content of the page */
 .container .panel {
     display:flex;
     flex-direction: column;
@@ -40,12 +46,14 @@ height: 100%;
     grid-column: 2/12;
     grid-row: 5/12;
 }
+/* The section component containing the content of the page */
 section{
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
 
+/* The services component containing the services of the page */
 .services {
     display:grid;
     grid-template-columns: 1fr;
@@ -55,25 +63,29 @@ section{
     height: auto;
 }
 
+/* The panel component in the services component */
 .services .panel{
     justify-content: flex-start;
     gap: 1rem;
 }
+/* The image component in the panel component */
 .panel img{
     border-radius: 1rem;
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
-
+/* The image component in the services component */
 .services-image{
     max-width: 100%;
 }
 
+/* The h3 heading component in the panel component */
 .panel h3{
     font-weight: 900;
     color: var(--tertiary);
 }
 
+/* Media query for the services component at 768px */
 @media screen and (min-width : 768px) {
     .blog{
         justify-content: flex-start;
@@ -83,7 +95,7 @@ section{
     }
 }
 
-
+/* Media query for the services component at 1040px */
 @media screen and (min-width : 1040px) {
     
     .services {

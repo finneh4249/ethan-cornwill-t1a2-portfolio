@@ -1,0 +1,100 @@
+/* The main component of the blog post page. It contains the title image, heading, and blog content. */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* The title image of the blog post. It is a background image with the heading and description placed on top of it. */
+.splash{
+    background-image: var(--cover-photo);
+    background-size: cover;
+    background-position: center;
+    background-color: var(--secondary);
+    background-blend-mode: overlay;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50dvh;
+    padding-bottom: 1rem;
+}
+
+/* The heading component of the blog post page. It contains the title and date of the blog post. */
+main h1{
+    margin-top: 1rem;
+    width: 75dvw;
+}
+
+/* The panel component of the blog post page. It contains the blog content. */
+main .panel {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/* The section component of the blog post page. It contains the blog content. */
+section{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+/* The heading component of the blog post page. It contains the title and date of the blog post. */
+.panel h2{
+    font-weight: 900;
+    color: var(--tertiary);
+}
+
+/* The breadcrumb component of the blog post page. It contains the links to the homepage and the category of the blog post. */
+#breadcrumbs{
+    display: flex;
+    flex-direction: row;
+}
+
+/* The blog post component of the blog post page. It contains the blog content. */
+.blog-post{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* The post info component of the blog post page. It contains the post date and category. */
+.post-info{
+    display: flex;
+    flex-direction: column;
+    gap: .1rem;
+    align-items: center;
+}
+
+/* The post image component of the blog post page. It contains the post image. */
+.post-image{
+    width: 75dvw;
+    height: 50dvh;
+    border-radius: .5rem;
+    border: 5px solid white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    object-fit: cover;
+}
+
+/* The blog content component of the blog post page. It contains the blog content. */
+.blog-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px){
+    main h1{
+        width: 50dvw;
+    }
+    .blog-content{
+        flex-direction: row;
+    }
+}
+
+

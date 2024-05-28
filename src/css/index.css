@@ -1,9 +1,15 @@
+/* 
+ * The main component of the page
+ */
 main{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
 }
 
+/* 
+ * The splash image component
+ */
 .splash{
     background-image: url("../images/cover-photo.jpg");
     background-size: cover;
@@ -20,17 +26,17 @@ main{
     padding-top: 1rem;
 }
 
+/* 
+ * The panel component containing the content of the page
+*/
 .panel-img{
     max-width: 30dvw;
     z-index: 3;
 }
-/* .panel-img{
-    grid-column: 5 / 9;
-    grid-row: 4 / 7;
-    z-index: 1;
-} */
 
-
+/* 
+ * The panel component containing the content of the page
+*/
 main .panel {
     display:flex;
     flex-direction: column;
@@ -40,8 +46,16 @@ main .panel {
     align-items: flex-start;
     margin-top: 5rem;
 }
+.blurb{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
 
-
+/* 
+ * The social media icons
+*/
 .social-icons{
     display:flex;
     gap: 1rem;
@@ -51,6 +65,9 @@ main .panel {
     
 }
 
+/* 
+ * The panel section
+*/
 .panel section{
     width: 100%;
 }
@@ -83,4 +100,5 @@ section h2{
         gap: 4rem;
         padding-top: 0;
     }
+
 }

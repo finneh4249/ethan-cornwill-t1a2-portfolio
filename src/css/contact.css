@@ -1,11 +1,17 @@
+/*
+ * The main component of the contact page
+ */
 main{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
 }
 
+/*
+ * The splash image component
+ */
 .splash{
-    background-image: url("../images/cover-photo.jpg");
+    background-image: var(--cover-photo);
     background-size: cover;
     background-position: center;
     background-color: var(--secondary);
@@ -18,11 +24,17 @@ main{
     max-height: 50dvh;
 }
 
+/*
+ * The main heading in the splash component
+ */
 main h1{
     font-weight: 900;
     font-size: 3rem;
     color: var(--text-dark);
 }
+/*
+ * The panel component containing the content of the contact page
+ */
 main .panel {
     display:flex;
     flex-direction: column;
@@ -30,26 +42,27 @@ main .panel {
     grid-column: 2/12;
     grid-row: 5/12;
 }
+/*
+ * The section component containing the content of the contact page
+ */
 section{
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
 
+/*
+ * The form component containing the contact form
+ */
 form{
     display:flex;
     flex-direction: column;
     gap: 1rem;
-
-}
-input{
-    text-align: center;
 }
 
-.panel h2{
-    font-weight: 900;
-    color: var(--tertiary);
-}
+/*
+ * The form element component containing a single form element
+ */
 .form-element{
     display: flex;
     flex-direction: column;
@@ -73,6 +86,9 @@ input{
     box-shadow:  rgba(0, 0, 0, 0.1) 0px 5px 15px;
 }
 
+/*
+ * The form input component
+ */
 .form-input:not(.form-textarea){
     height: 2rem;
 }
@@ -81,7 +97,9 @@ input{
     height: 6rem;
 }
 
-
+/*
+ * Media query for the form element component
+ */
 @media screen and (min-width: 768px) {
     .form-element{
         flex-direction: row;
