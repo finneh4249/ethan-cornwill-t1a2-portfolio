@@ -137,7 +137,6 @@ nav a:hover {
   color: var(--text-light);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   font-weight: 800;
-  text-transform: uppercase;
 }
 .social-icons a:hover i {
   color: var(--primary);
@@ -146,11 +145,15 @@ nav a:hover {
   font-size: 5rem;
 }
 
+li .active{
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
 .active {
   background-color: var(--primary);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  font-weight: 800;
-  text-transform: uppercase;
+
 }
 
 /* Footer Component */
@@ -190,6 +193,7 @@ i {
 
 .btn {
   text-align: center;
+  text-decoration: none;
   padding: 1rem;
   background-color: var(--primary);
   border: none;
@@ -239,7 +243,7 @@ footer a {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-widtb09eea: 768px) {
   header {
     height: 6rem;
   }
