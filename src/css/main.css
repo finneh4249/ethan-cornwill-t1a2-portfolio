@@ -243,7 +243,7 @@ footer a {
   display: none;
 }
 
-@media screen and (max-widtb09eea: 768px) {
+@media screen and (max-width: 768px) {
   header {
     height: 6rem;
   }
