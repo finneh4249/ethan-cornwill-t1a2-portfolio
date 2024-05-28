@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ethan Cornwill - Portfolio</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -13,12 +13,21 @@
   </head>
   <body>
     <header>
+      <!-- The header component contains a logo and navigation -->
       <div class="logo-name">
-      <img src="./images/profile.jpg" alt="A photo of me!" class="nav-image panel-img">
-      <p class="name">Ethan Cornwill</p>
+        <!-- The logo is just an image of myself -->
+        <img
+          src="./images/profile.jpg"
+          alt="A photo of me!"
+          class="nav-image panel-img"
+        />
+        <p class="name">Ethan Cornwill</p>
       </div>
+
+      <!-- The hamburger icon is used to toggle the navigation menu on mobile devices -->
       <i id="hamburger" class="bx bx-menu"></i>
 
+      <!-- The navigation menu is hidden by default and is shown when the hamburger icon is clicked -->
       <nav class="panel" id="nav-panel">
         <ul class="nav-list">
           <li><a href="./index.html" class="nav-link active">Home</a></li>
@@ -30,65 +39,103 @@
       </nav>
     </header>
     <main>
-      <!-- Page Splash Image Component -->
-      <div class="splash">  
-        <img src="./images/profile.jpg" alt="A photo of me!" class="panel-img">
-          <h1>Ethan Cornwill</h1>
+      <!-- The page splash image component is just an image with a heading on top of it -->
+      <div class="splash">
+        <img
+          src="./images/profile.jpg"
+          alt="A photo of me!"
+          class="panel-img"
+        />
+        <h1>Ethan Cornwill</h1>
       </div>
-      
+
+      <!-- The about section contains a heading and a paragraph of text -->
       <article class="panel">
-        
-       
-        <section>  
+        <section>
           <h2>Who Am I?</h2>
-          <p>Hello! I’m Ethan, a passionate web developer with a knack for creating sleek, user-friendly websites that stand out. With a keen eye for design and a solid foundation in coding, I bring ideas to life on the digital canvas. My journey in tech began with a curiosity for how websites work, which quickly blossomed into a full-fledged career. I’m dedicated to learning and growing with the ever-evolving tech landscape, ensuring that every project I touch is not just functional but also innovative and engaging. When I’m not coding, you’ll find me exploring the latest tech trends or unwinding with a good book and a cup of coffee.</p>
+          <p class="blurb">
+            <span
+              >Hello! I’m Ethan, a passionate web developer with a knack for
+              creating sleek, user-friendly websites that stand out. With a keen
+              eye for design and a solid foundation in coding, I bring ideas to
+              life on the digital canvas.</span
+            ><span
+              >My journey in tech began with a curiosity for how technology
+              works, which quickly blossomed into a burning passion.</span
+            >
+            <span
+              >I’m dedicated to learning and growing with the ever-evolving tech
+              landscape, ensuring that every project I touch is not just
+              functional but also innovative and engaging. When I’m not coding,
+              you’ll find me exploring the latest tech trends or unwinding with
+              a good book and a cup of coffee.</span
+            >
+          </p>
         </section>
 
+        <!-- The call to action section contains two buttons, one to hire me and one to view my resume -->
         <section id="cta">
           <h2>Get In Touch</h2>
-          <a href="./pages/contact.html"><button type="button" class="btn">Hire Me</button></a>
-          <a href="./assets/resume.pdf"><button type="button" class="btn">My Resume</button></a>
+          <a href="./pages/contact.html"
+            ><button type="button" class="btn">Hire Me</button></a
+          >
+          <a href="./assets/resume.pdf"
+            ><button type="button" class="btn">My Resume</button></a
+          >
         </section>
 
+        <!-- The socials section contains a heading and three social media icons -->
         <section>
           <h2>My Socials</h2>
-          <div class="social-icons">  <a href="https://linkedin.com/in/ethan-cornwill" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-            <a href="https://x.com/melbPAT" target="_blank"><i class='bx bxl-twitter' ></i></a>
-            <a href="https//github.com/finneh4249" target="_blank"><i class='bx bxl-github' ></i></a></div>
-  
-
+          <div class="social-icons">
+            <a href="https://linkedin.com/in/ethan-cornwill" target="_blank"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
+            <a href="https://x.com/melbPAT" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://github.com/finneh4249" target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
         </section>
-       
       </article>
     </main>
     <footer class="panel footer-links">
-        <div>
-          <h2>Ethan Cornwill</h2>
-        <div class="footer-icons">  <a href="https://linkedin.com/in/ethan-cornwill" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
-          <a href="https://x.com/melbPAT" target="_blank"><i class='bx bxl-twitter' ></i></a>
-          <a href="https//github.com/finneh4249" target="_blank"><i class='bx bxl-github' ></i></a></div>
+      <!-- The footer component contains the logo, navigation menu and social media icons -->
+      <div>
+        <h2>Ethan Cornwill</h2>
+        <div class="footer-icons">
+          <a href="https://linkedin.com/in/ethan-cornwill" target="_blank"
+            ><i class="bx bxl-linkedin-square"></i
+          ></a>
+          <a href="https://x.com/melbPAT" target="_blank"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a href="https://github.com/finneh4249" target="_blank"
+            ><i class="bx bxl-github"></i
+          ></a>
         </div>
-        
-        <ul class="nav-list">
-          <li><a href="./index.html" class="nav-link active">Home</a></li>
-          <li><a href="./pages/services.html" class="nav-link">Services</a></li>
-          <li><a href="./pages/about.html" class="nav-link">About</a></li>
-          <li><a href="./pages/contact.html" class="nav-link">Contact</a></li>
-          <li><a href="./pages/blog.html" class="nav-link">Blog</a></li>
-        </ul>
-
-          <div class="info">
-            <p><i class='bx bxs-phone'></i> 0412 345 678</p>
-            <p><i class='bx bxs-home' ></i> 123 Main Street, Anytown, Australia</p>
-          </div>
-      
-  
-        <p class="copy">Copyright &copy; 2024 Ethan Cornwill</p>
-
       </div>
-      
+
+      <!-- The navigation menu is the same as the header component -->
+      <ul class="nav-list">
+        <li><a href="./index.html" class="nav-link active">Home</a></li>
+        <li><a href="./pages/services.html" class="nav-link">Services</a></li>
+        <li><a href="./pages/about.html" class="nav-link">About</a></li>
+        <li><a href="./pages/contact.html" class="nav-link">Contact</a></li>
+        <li><a href="./pages/blog.html" class="nav-link">Blog</a></li>
+      </ul>
+
+      <!-- The info section contains a phone number and address -->
+      <div class="info">
+        <p><i class="bx bxs-phone"></i> 0412 345 678</p>
+        <p><i class="bx bxs-home"></i> 123 Main Street, Anytown, Australia</p>
+      </div>
+
+      <p class="copy">Copyright &copy; 2024 Ethan Cornwill</p>
     </footer>
-   <script type="module" src="./js/main.js"></script>
-   <script type="module" src="./js/navbar.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/navbar.js"></script>
   </body>
 </html>

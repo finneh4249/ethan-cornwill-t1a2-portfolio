@@ -1,105 +1,103 @@
 /* Grid container for the whole page */
-.container{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    height: auto;
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: auto;
 }
 
 /* Set the height of the article component to 100% */
-article{
-height: 100%;
+article {
+  height: 100%;
 }
 
 /* The splash image component */
-.splash{
-    background-image: var(--cover-photo);
-    background-size: cover;
-    background-position: center;
-    background-color: var(--secondary);
-    background-blend-mode: overlay;
-    grid-column: 1/13;
-    grid-row: 1/6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-height: 50dvh;
+.splash {
+  background-image: var(--cover-photo);
+  background-size: cover;
+  background-position: center;
+  background-color: var(--secondary);
+  background-blend-mode: overlay;
+  grid-column: 1/13;
+  grid-row: 1/6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 50dvh;
 }
 
 /* The main heading in the splash component */
-.page-head{
-    justify-content: center !important;
+.page-head {
+  justify-content: center !important;
 }
 /* The main heading in the page */
-.container h1{
-    font-weight: 900;
-    font-size: 3rem;
-    color: var(--text-dark);
-    margin-top: 2rem;
-    margin-bottom: 4rem;
+.container h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  color: var(--text-dark);
+  margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 /* The panel component containing the content of the page */
 .container .panel {
-    display:flex;
-    flex-direction: column;
-    gap: 2rem;
-    grid-column: 2/12;
-    grid-row: 5/12;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  grid-column: 2/12;
+  grid-row: 5/12;
 }
 /* The section component containing the content of the page */
-section{
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 /* The services component containing the services of the page */
 .services {
-    display:grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin: 1rem;
-    flex-wrap: wrap;
-    height: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 1rem;
+  flex-wrap: wrap;
+  height: auto;
 }
 
 /* The panel component in the services component */
-.services .panel{
-    justify-content: flex-start;
-    gap: 1rem;
+.services .panel {
+  justify-content: flex-start;
+  gap: 1rem;
 }
 /* The image component in the panel component */
-.panel img{
-    border-radius: 1rem;
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.5);
+.panel img {
+  border-radius: 1rem;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
 /* The image component in the services component */
-.services-image{
-    max-width: 100%;
+.services-image {
+  max-width: 100%;
 }
 
 /* The h3 heading component in the panel component */
-.panel h3{
-    font-weight: 900;
-    color: var(--tertiary);
+.panel h3 {
+  font-weight: 900;
+  color: var(--tertiary);
 }
 
 /* Media query for the services component at 768px */
-@media screen and (min-width : 768px) {
-    .blog{
-        justify-content: flex-start;
-    }
-    .services{
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media screen and (min-width: 768px) {
+  .blog {
+    justify-content: flex-start;
+  }
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Media query for the services component at 1040px */
-@media screen and (min-width : 1040px) {
-    
-    .services {
-        grid-template-columns: repeat(3,1fr);
-    }
-    
+@media screen and (min-width: 1040px) {
+  .services {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
