@@ -2,8 +2,6 @@
 
 ## Purpose
 
-This is a test for a test commit to see if i've removed my pseudonym from the commits!
-
 The purpose of this website is to serve as an online portfolio showcasing the skills, interests, and professional knowledge of myself, in relation to web development and this course.
 I aim to display the work and coding experience of myself, effectively communicating my abilities to potential employers.
 
