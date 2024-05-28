@@ -18,7 +18,6 @@ This component serves as the primary navigation tool of the website. It includes
 
 ![Navbar](./docs/components/navbar/navbar.png)
 ![Navbar mobile](./docs/components/navbar/navbar-mobile.png)
-![Navbar tablet](./docs/components/navbar/navbar-tablet.png)
 
 #### Splash
 
@@ -52,7 +51,7 @@ The target audience for this site is prospective employers who are looking to hi
 
 ## Tech stack (e.g. html, css, deployment platform, etc)
 
-The site is deployed using GitHub Pages. This is a free tool provided by GitHub that allows you to host static websites on GitHub's servers.
+The site is deployed using Netlify. This is a free tool providedthat allows you to host static and dynamic websites.
 
-My Published website is available here [Website](https://finneh4249.github.io/ethan-cornwill-t1a2-portfolio/).
+My Published website is available here [Website](https://ethan-cornwill-t1a2-portfolio.netlify.app/).
 [GitHub Repo](https://github.com/finneh4249/ethan-cornwill-t1a2-portfolio).
