@@ -5,17 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Ethan Cornwill</title>
 
+    <!--
+      The following are the icons used in the page.
+      The manifest file is used to store the icons for the page.
+    -->
     <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png" />
     <link rel="manifest" href="../site.webmanifest" />
 
+    <!--
+      The main stylesheet for the page.
+      This links to the main css file for the page.
+    -->
     <link rel="stylesheet" href="../css/main.css" />
+
+    <!--
+      The stylesheet for this page.
+      This links to the stylesheet for this specific page.
+    -->
     <link rel="stylesheet" href="../css/contact.css" />
+
+    <!--
+      The Boxicons stylesheet.
+      This links to the Boxicons stylesheet, which is used for the icons in the page.
+    -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <!--
+      The style tag to add custom styles to the page.
+      This is used to add the background image to the page.
+    -->
     <style>
       body {
         --cover-photo: url("../images/covers/contact.jpg");
@@ -24,6 +47,10 @@
   </head>
   <body>
     <header>
+      <!--
+        The logo and name of the webpage.
+        This is the logo and name of the webpage.
+      -->
       <div class="logo-name">
         <img
           src="../images/profile.jpg"
@@ -32,7 +59,17 @@
         />
         <p class="name">Ethan Cornwill</p>
       </div>
+
+      <!--
+        The hamburger icon for the navigation menu.
+        This is the hamburger icon that is used to toggle the navigation menu.
+      -->
       <i id="hamburger" class="bx bx-menu harmbuger"></i>
+
+      <!--
+        The navigation menu.
+        This is the navigation menu that is toggled by the hamburger icon.
+      -->
       <nav class="panel" id="nav-panel">
         <ul class="nav-list">
           <li class="nav-item">
@@ -54,12 +91,26 @@
       </nav>
     </header>
     <main>
+      <!--
+        The splash section for the page.
+        This is the splash section for the page.
+      -->
       <div class="splash">
         <h1>Contact Me</h1>
       </div>
+
+      <!--
+        The panel section for the page.
+        This is the panel section for the page.
+      -->
       <div class="panel">
         <h2>Get in Touch</h2>
         <p>Fill out the form below and we will get back to you</p>
+
+        <!--
+          The form section for the page.
+          This is the form section for the page.
+        -->
         <section class="form">
           <form action="mailto:mail@finneh.xyz">
             <div class="form-element">
@@ -107,9 +158,18 @@
       </div>
     </main>
 
+    <!--
+      The footer section for the page.
+      This is the footer section for the page.
+    -->
     <footer class="panel footer-links">
-      <div>
+      <section>
         <h2>Ethan Cornwill</h2>
+
+        <!--
+          The icons section for the footer.
+          This is the icons section for the footer.
+        -->
         <div class="footer-icons">
           <a href="https://linkedin.com/in/ethan-cornwill" target="_blank"
             ><i class="bx bxl-linkedin-square"></i
@@ -117,30 +177,43 @@
           <a href="https://x.com/melbPAT" target="_blank"
             ><i class="bx bxl-twitter"></i
           ></a>
-          <a href="https//github.com/finneh4249" target="_blank"
+          <a href="https://github.com/finneh4249" target="_blank"
             ><i class="bx bxl-github"></i
           ></a>
         </div>
-      </div>
+      </section>
 
+      <!--
+        The navigation links for the footer.
+        This is the navigation links for the footer.
+      -->
       <ul class="nav-list">
         <li><a href="../index.html" class="nav-link">Home</a></li>
         <li>
           <a href="./services.html" class="nav-link">Services</a>
         </li>
         <li><a href="./about.html" class="nav-link">About</a></li>
-        <li><a href="./contact.html" class="nav-link active">Contact</a></li>
-        <li><a href="./blog.html" class="nav-link">Blog</a></li>
+        <li><a href="./contact.html" class="nav-link">Contact</a></li>
+        <li><a href="./blog.html" class="nav-link active">Blog</a></li>
       </ul>
 
-      <div class="info">
+      <!--
+        The information section for the footer.
+        This is the information section for the footer.
+      -->
+      <section class="info">
         <p><i class="bx bxs-phone"></i> 0412 345 678</p>
         <p><i class="bx bxs-home"></i> 123 Main Street, Anytown, Australia</p>
-      </div>
+      </section>
 
+      <!--
+        The copywrite information for the footer.
+        This is the copywrite information for the footer.
+      -->
       <p class="copy">Copyright &copy; 2024 Ethan Cornwill</p>
     </footer>
     <script type="module" src="../js/main.js"></script>
     <script type="module" src="../js/navbar.js"></script>
   </body>
 </html>
+
